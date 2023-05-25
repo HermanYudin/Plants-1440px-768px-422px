@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+  }
+
+ @font-face {
+    src: url(../fonts/Inter-Regular.woff);
+  
+    font-style: normal;
+    font-weight: 400;
+    font-family: "regular";
+  }
+  
+  @font-face {
+    src: url(../fonts/Inter-Bold.woff);
+  
+    font-style: normal;
+    font-weight: 700;
+    font-family: "bold";
+  }
+
+ body{
+    margin:0;
+}
+
+.page-container {
+    margin: 0 auto;
+    min-width: 1440px;
+  }
+
+  .header {
+    background-color: #EDF2EC;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height:134px;
+
+  }
+  
+  .logo {
+    width: 80px;
+    height: 20px;
+    margin-left:110px;
+  }
+
+  .menu {
+    margin-right:109px;
+  }
+  .menu-list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .menu-list-item:nth-child(n + 2) {
+    margin-left: 46px;
+  }
+
+  .menu-link {
+    color: black;
+    text-decoration: none;
+    font-family: "regular";
+    font-size: 16px;
+  }
+
+  .menu-link-two {
+    color:#E06733;
+  }
+
+  .welcome{
+    min-height:532px;
+    background-color: #EDF2EC;
+    min-width:1440px;
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .img-leafs{
+    width: 448px;
+    height:407px;
+    margin-top: 62px;
+    margin-left: 109px;
+    margin-bottom: 62px;
+  }
+
+ .welcome-header{
+    margin: 65px 109px 94px auto;
+    height:340px;
+    width:549px;
+ }
+ 
+ .welcome-title{
+    font-size:45px;
+    font-family: 'bold';
+    color:gray;
+ }
+
+ .welcome-text{
+    font-size:20px;
+    color:gray;
+    font-family: 'regular';
+    margin-top:40px;
+    line-height: 35px;
+    box-shadow: 10px 5px 5px #499A18;
+ }
+
+ .welcome-button{
+    color:black;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'regular';
+    padding:14px 27px 14px 27px;
+    border-radius: 10px;
+    border: 2px solid #E06733;
+    height: 45px;
+    margin-top: 25px;
+    text-align: center;
+    line-height: 10px;
+ }
+
+ .welcome-button:hover{
+    cursor:pointer;
+ }
+
+ .about{
+    min-height:666px;
+    background-color: white;
+    min-width:1440px;
+    display:flex;
+    justify-content: space-between;
+  }
+
+ .img-houseplant{
+    width:464px;
+    height:469px;
+    margin: 93px 109px 94px auto;
+ }
+
+ .about-header{
+    height:350px;
+    width:605px;
+    margin:135px auto 155px 109px;
+ }
+ 
+ .about-title{
+    font-size:40px;
+    font-family: 'regular';
+    color:#499A18;
+ }
+
+ .about-text{
+    font-size:20px;
+    color:gray;
+    font-family: 'regular';
+    line-height: 30px;
+    margin-top:40px;
+    box-shadow: 10px 5px 5px #E06733;
+ }
+
+.services-container{
+    min-width: 1440px;
+    min-height:1300px;
+    background-color: #EDF2EC;
+}
+
+.services{
+    display:flex;
+    min-height:94px;
+    min-width: 1440px;
+    padding-top:10px;
+    padding-left: 109px;
+    padding-right:324px;
+    align-items: center;
+}
+
+.service-header{
+    font-size:40px;
+    color:green;
+    min-width:300px;
+}
+
+.service-list{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-left: 107px
+}
+
+.service-link{
+text-decoration: none;
+color:#E06733;
+font-size: 20px;
+}
+
+
+.service-item:hover{
+    background-color: #499A18;
+}
+
+.service-item{
+    border: 1px solid #E06733;
+    padding: 12px 45px 12px 45px;
+    border-radius: 5px;
+}
+.service-item:nth-child(n+2){
+    padding: 12px 55px 12px 55px;
+}
+
+.service-item:nth-child(n+1){
+    margin-right: 38px;
+}
+
+.services-articles{
+    margin-top: 52px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-article{
+    width:30%;
+    text-align: center;
+    margin:0 auto;
+}
+
+.services-article:nth-child(3n+1){
+    padding-left:75px;
+}
+
+.services-article:nth-child(3n+3){
+    padding-right:80px;
+}
+
+.services-article:nth-child(1n+4){
+    margin-top:70px;
+}
+
+.services-img{
+    border-radius: 20px 20px 0 0;
+}
+
+.services-header{
+    margin-top:5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'bold';
+    color: #E06733;
+}
+
+.services-text{
+    margin-top:-5px;
+    font-size: 16px;
+    font-family: 'regular';
+}
+
+.services-article:nth-child(2n+2){
+    filter: blur(2px);
+}
