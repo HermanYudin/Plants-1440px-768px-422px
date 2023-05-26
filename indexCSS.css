@@ -202,6 +202,7 @@ font-size: 20px;
     border: 1px solid #E06733;
     padding: 12px 45px 12px 45px;
     border-radius: 5px;
+    cursor:pointer;
 }
 .service-item:nth-child(n+2){
     padding: 12px 55px 12px 55px;
@@ -299,7 +300,7 @@ font-size: 20px;
 
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../png/down.png");
+  background-image: url("../../png/down.png");
   background-repeat: no-repeat;
   background-position: right 35px center;
   background-size: 16px;
@@ -307,7 +308,7 @@ font-size: 20px;
 }
 
 .prices-select:focus{
-  background-image: url("../png/up.png");
+  background-image: url("../../png/up.png");
   background-repeat: no-repeat;
   background-position: right 35px center;
   background-size: 16px;
@@ -391,7 +392,7 @@ font-size: 20px;
   background-color: #D6E7D2;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../png/down gray.png");
+  background-image: url("../../png/down gray.png");
   background-repeat: no-repeat;
   background-position: right 35px center;
   background-size: 16px;
@@ -408,7 +409,7 @@ font-size: 20px;
 
 
 .contacts-select:focus{
-  background-image: url("../png/up green.png");
+  background-image: url("../../png/up green.png");
   background-repeat: no-repeat;
   background-position: right 35px center;
   background-size: 16px;
@@ -456,7 +457,7 @@ font-size: 20px;
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
-  background-image: url("../png/inst 1.png");
+  background-image: url("../../png/inst 1.png");
 }
 
 .social-link-face:before {
@@ -471,7 +472,7 @@ font-size: 20px;
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
-  background-image: url("../png/fb 1.png");
+  background-image: url("../../png/fb 1.png");
 }
 
 .social-link-tw:before {
@@ -485,7 +486,7 @@ font-size: 20px;
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
-  background-image: url("../png/tw 1.png");
+  background-image: url("../../png/tw 1.png");
 }
 
 .social-link-pint:before {
@@ -499,7 +500,7 @@ font-size: 20px;
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
-  background-image: url("../png/pinterest 1.png");
+  background-image: url("../../png/pinterest 1.png");
 }
 
 .footer-block{
