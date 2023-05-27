@@ -20,6 +20,8 @@
 
  body{
     margin:0;
+    display: flex;
+    justify-content: center;
 }
 
 .page-container {
@@ -43,6 +45,13 @@
     width: 80px;
     height: 20px;
     margin-left:110px;
+    transition: all;
+    transition-duration: 1s;
+  }
+
+  .logo:hover {
+    width:120px;
+    height: 30px;
   }
 
   .menu {
@@ -62,10 +71,22 @@
     text-decoration: none;
     font-family: "regular";
     font-size: 16px;
+    transition: all;
+    transition-duration: 1s;
   }
 
-  .menu-link-two {
+  .menu-link:hover{
+    color:#499A18;
+  }
+
+  .menu-link-first {
     color:#E06733;
+    transition: all;
+    transition-duration: 1s;
+  }
+
+  .menu-link-first:hover {
+    color:black;
   }
 
   .welcome{
@@ -117,10 +138,16 @@
     margin-top: 25px;
     text-align: center;
     line-height: 10px;
+    transition: all;
+    transition-duration: 1s;
  }
 
  .welcome-button:hover{
     cursor:pointer;
+    border-color:#499A18;
+    color: #E06733;
+    border-radius: 20px;
+    transform: scale(1.15);
  }
 
  .about{
@@ -187,23 +214,25 @@
     margin-left: 107px
 }
 
-.service-link{
-text-decoration: none;
-color:#E06733;
-font-size: 20px;
-}
-
-
-.service-item:hover{
-    background-color: #499A18;
+.service-item:hover,
+.service-item.active {
+    background-color: white;
+    color:#499A18;
+    border: 1px solid #E06733;
+    margin-top:30px;
 }
 
 .service-item{
-    border: 1px solid #E06733;
+    border: 1px solid #499A18;
     padding: 12px 45px 12px 45px;
     border-radius: 5px;
     cursor:pointer;
+    color:#E06733;
+    font-size: 20px;
+    transition: all;
+    transition-duration: 0.5s;
 }
+
 .service-item:nth-child(n+2){
     padding: 12px 55px 12px 55px;
 }
@@ -222,6 +251,13 @@ font-size: 20px;
     width:30%;
     text-align: center;
     margin:0 auto;
+    filter: blur(2px);
+    transition: all;
+    transition-duration: 1s;
+}
+
+.services-article.active {
+  filter: blur(0);
 }
 
 .services-article:nth-child(3n+1){
@@ -252,10 +288,6 @@ font-size: 20px;
     margin-top:-5px;
     font-size: 16px;
     font-family: 'regular';
-}
-
-.services-article:nth-child(2n+2){
-    filter: blur(2px);
 }
 
 .prices{
@@ -300,7 +332,7 @@ font-size: 20px;
 
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../../png/down.png");
+  background-image: url('png/down.png');
   background-repeat: no-repeat;
   background-position: right 35px center;
   background-size: 16px;
@@ -308,10 +340,14 @@ font-size: 20px;
 }
 
 .prices-select:focus{
-  background-image: url("../../png/up.png");
+  background-image: url('png/up.png');
   background-repeat: no-repeat;
   background-position: right 35px center;
   background-size: 16px;
+}
+
+.prices-select:hover{
+  cursor: pointer;
 }
 
 .prices-select:nth-child(1n+2){
@@ -350,10 +386,16 @@ font-size: 20px;
   font-family: 'bold';
   margin-left: 283px;
   margin-top:10px;
+  transition: all;
+  transition-duration: 1.5s;
 }
 
 .prices-contacts-button:hover{
   cursor: pointer;
+  width:330px;
+  margin-left:120px;
+  border:1px solid #499A18;
+  color: #499A18;
 }
 
 .prices-leafs{
@@ -392,7 +434,7 @@ font-size: 20px;
   background-color: #D6E7D2;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../../png/down gray.png");
+  background-image: url('../png/down gray.png');
   background-repeat: no-repeat;
   background-position: right 35px center;
   background-size: 16px;
@@ -407,9 +449,13 @@ font-size: 20px;
   box-shadow: #AEA1A1 0px 5px 5px;
 }
 
+.contacts-select:hover{
+  cursor:pointer;
+}
+
 
 .contacts-select:focus{
-  background-image: url("../../png/up green.png");
+  background-image: url('png/up green.png');
   background-repeat: no-repeat;
   background-position: right 35px center;
   background-size: 16px;
@@ -457,7 +503,7 @@ font-size: 20px;
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
-  background-image: url("../../png/inst 1.png");
+  background-image: url('png/inst 1.png');
 }
 
 .social-link-face:before {
@@ -472,7 +518,7 @@ font-size: 20px;
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
-  background-image: url("../../png/fb 1.png");
+  background-image: url('png/fb 1.png');
 }
 
 .social-link-tw:before {
@@ -486,7 +532,7 @@ font-size: 20px;
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
-  background-image: url("../../png/tw 1.png");
+  background-image: url('png/tw 1.png');
 }
 
 .social-link-pint:before {
@@ -500,7 +546,7 @@ font-size: 20px;
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
-  background-image: url("../../png/pinterest 1.png");
+  background-image: url('png/pinterest 1.png');
 }
 
 .footer-block{
@@ -527,4 +573,21 @@ font-size: 20px;
 
 .social-item:nth-child(1n+1){
   margin-right:20px;
+}
+
+.school-link{
+  color:black;
+  text-decoration: none;
+  transition: all;
+  transition-duration: 1.5s;
+}
+
+.school-link:hover{
+color:#E06733;
+font-size:25px;
+}
+
+.github-link{
+  color:black;
+  text-decoration: none;
 }
