@@ -37,6 +37,19 @@
             </div>
         </section>
 
+        <section class="welcome-landscape">
+            <div class="welcome-landscape-header">
+                <h1 class="welcome-landscape-title">
+                    We grow <font color="#499A18">plants</font> and give you oxygen
+                </h1>
+                <p class="welcome-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+                <button class="welcome-button">learn more</button>
+            </div>
+            <img src="svg/leafs.svg" class="img-leafs" alt="Leaf">
+        </section>
+
         <section class="about">
             <div class="about-header">
                 <h1 class="about-title">
@@ -61,32 +74,56 @@
 
         <div class="services-articles">
         <article class="services-article garden">
-            <img src="images/1.jpg" class="services-img" alt="1">
+            <picture>
+                <source srcset="images/1.jpg" media="(min-width: 1440px)">
+                <source srcset="images/1-tablet.jpg" media="(min-width: 381px) and (max-width:768px)">
+                <img src="images/1.jpg" class="services-img" alt="1">
+              </picture>
             <h1 class="services-header">Garden care</h1>
             <p class="services-text">Lorem Ipsum has been the industry</p>
         </article>
         <article class="services-article planting">
-            <img src="images/2.jpg" class="services-img" alt="2">
+            <picture>
+                <source srcset="images/2.jpg" media="(min-width: 1440px)">
+                <source srcset="images/2-tablet.jpg" media="(min-width: 381px) and (max-width:768px)">
+                <img src="images/2.jpg" class="services-img" alt="1">
+              </picture>
             <h1 class="services-header">Planting</h1>
             <p class="services-text">Lorem Ipsum has been the industry</p>
         </article>
         <article class="services-article lawn">
-            <img src="images/3.jpg" class="services-img" alt="3">
+            <picture>
+                <source srcset="images/3.jpg" media="(min-width: 1440px)">
+                <source srcset="images/3-tablet.jpg" media="(min-width: 381px) and (max-width:768px)">
+                <img src="images/3.jpg" class="services-img" alt="1">
+              </picture>
             <h1 class="services-header">Lawn care</h1>
             <p class="services-text">Lorem Ipsum has been the industry</p>
         </article>
         <article class="services-article planting">
-            <img src="images/4.jpg" class="services-img" alt="4">
+            <picture>
+                <source srcset="images/4.jpg" media="(min-width: 1440px)">
+                <source srcset="images/4-tablet.jpg" media="(min-width: 381px) and (max-width:768px)">
+                <img src="images/4.jpg" class="services-img" alt="1">
+              </picture>
             <h1 class="services-header">Planting</h1>
             <p class="services-text">Lorem Ipsum has been the industry</p>
         </article>
         <article class="services-article garden">
-            <img src="images/5.jpg" class="services-img" alt="5">
+            <picture>
+                <source srcset="images/5.jpg" media="(min-width: 1440px)">
+                <source srcset="images/5-tablet.jpg" media="(min-width: 381px) and (max-width:768px)">
+                <img src="images/5.jpg" class="services-img" alt="1">
+              </picture>
             <h1 class="services-header">Garden care</h1>
             <p class="services-text">Lorem Ipsum has been the industry</p>
         </article>
         <article class="services-article planting">
-            <img src="images/6.jpg" class="services-img" alt="6">
+            <picture>
+                <source srcset="images/6.jpg" media="(min-width: 1440px)">
+                <source srcset="images/6-tablet.jpg" media="(min-width: 381px) and (max-width:768px)">
+                <img src="images/6.jpg" class="services-img" alt="1">
+              </picture>
             <h1 class="services-header">Planting</h1>
             <p class="services-text">Lorem Ipsum has been the industry</p>
         </article>
@@ -119,7 +156,7 @@
         </section>
 
         <section class="contacts">
-            <img class='contacts-img' src="png/woman.png" alt="woman">
+                <img class='contacts-img' src="png/woman.png" alt="woman">
             <h1 class="contacts-header">Contact us</h1>
             <label class="contacts-group">
                 <select class="contacts-select">
@@ -132,6 +169,22 @@
                 </select>
                 </label>
         </section>
+
+        <section class="contacts-landscape">
+            <h1 class="contacts-landscape-header">Contact us</h1>
+            <label class="contacts-landscape-group">
+                <select class="contacts-landscape-select">
+                    <option class="contacts-landscape-option super">City</option>
+                    <optgroup class='contacts-landscape-optgroup' label="Canandaigua, NY">
+                    <option class="contacts-landscape-option">New York City</option>
+                    <option class="contacts-landscape-option">Yonkers, NY</option>
+                    <option class="contacts-landscape-option">Sherrill, NY</option>
+                </optgroup>
+                </select>
+                </label>
+                <img class='contacts-landscape-img' src="png/mini-woman.png" alt="woman">
+        </section>
+
 
         <footer class="footer">
             <div class="footer-block first">
