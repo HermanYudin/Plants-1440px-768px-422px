@@ -1047,6 +1047,13 @@
   background-size: 16px;
 }
 
+.prices-select:focus{
+  background-image: url('png/up.png');
+  background-repeat: no-repeat;
+  background-position: right 35px center;
+  background-size: 16px;
+    }
+
 @media (max-width: 380px){
   .prices-select{
   width: 180px;
@@ -1067,13 +1074,6 @@
   background-repeat: no-repeat;
   background-position: right 35px center;
   background-size: 16px;
-
-.prices-select:focus{
-  background-image: url('png/up.png');
-  background-repeat: no-repeat;
-  background-position: right 35px center;
-  background-size: 16px;
-    }
   }
 }
 
